@@ -1,8 +1,11 @@
 class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+    
+    def __init__(self, name : str, age : int, greet : str):
+        self.name=name
+        self.age=age
+        self.greet=greet
+
+    
 
 
-Person1 = ("patrycja", 25)
-print("Witaj", Person1)
+Patrycja=Person('Patrycja', 26, 'Witaj')
