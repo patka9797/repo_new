@@ -1,9 +1,9 @@
 def square_tuple(tuple):
-    square = ()
+    square=[]
     for number in tuple:
         square += (number**2,)
     return square
-
+print(square_tuple((1,3,4,6,7,)))
 
 print(
     square_tuple(
