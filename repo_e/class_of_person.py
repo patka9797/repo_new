@@ -1,11 +1,14 @@
 class Person:
     
-    def __init__(self, name : str, age : int, greet : str):
+    def __init__(self, name : str, age : int):
         self.name=name
         self.age=age
-        self.greet=greet
+        
+    def greet(self):
+        print(f'Witaj {self.name}, {self.age}')
 
     
 
 
-Patrycja=Person('Patrycja', 26, 'Witaj')
+patrycja=Person('Patrycja',26)
+print(patrycja.greet())
