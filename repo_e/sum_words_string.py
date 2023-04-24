@@ -13,6 +13,6 @@ from collections import Counter
 
 def sum_word_in_string(string):
 
-    print(Counter(string))
+    return dict(Counter(string))
 
 print(sum_word_in_string('babka, jajko,babka, kurczak'))  
