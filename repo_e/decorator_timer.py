@@ -1,10 +1,17 @@
 from time import time
 
+def my_decorator(func):
+    def decorated_func(*args, **kwargs):
+        start = start.time()
+        result = func(*args, **kwargs)
+        end = end.time()
+        runtime = end - start
 
+    return decorated_func
 
-@decorator
-def long_time(n):
-    for i in range(n):
-        for j in range(100000):
-            i*j
-long_time(10)
+@my_decorator
+def sleep_function():
+    time.sleep(15)
+    print('Im sleeping right now')
+
+result = sleep_function
