@@ -1,5 +1,6 @@
 from time import time
 
+
 def my_decorator(func):
     def decorated_func(*args, **kwargs):
         start = start.time()
@@ -9,9 +10,11 @@ def my_decorator(func):
 
     return decorated_func
 
+
 @my_decorator
 def sleep_function():
     time.sleep(15)
-    print('Im sleeping right now')
+    print("Im sleeping right now")
+
 
 result = sleep_function
